@@ -1,4 +1,5 @@
 import boolQuery from './bool-query'
+import nestedQuery from './nested-query'
 import fuzzyQuery from './fuzzy-query'
 import matchQuery from './match-query'
 import multiMatchQuery from './multi-match-query'
@@ -16,8 +17,9 @@ import termsQuery from './terms-query'
  *   .build()
  */
 export default {
-  bool: boolQuery,
+  bool: boolQuery,  
   boolean: boolQuery,
+  nested: nestedQuery,
   fuzzy: fuzzyQuery,
   match: matchQuery,
   multi_match: multiMatchQuery,
