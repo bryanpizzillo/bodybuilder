@@ -23,7 +23,7 @@ export default function nestedQuery(path, score_mode, query) {
     nested: {
       path: path,
       score_mode: score_mode,
-      query: query
+      query: query["query"]
     }
   }
 }
